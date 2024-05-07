@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;     
+}
+
+@font-face {
+    font-family: 'ppneue';
+    src: url('./ppneue/PPNeueMontrealMono-RegularItalic.woff');
+}
+@font-face {
+    font-family: 'ppneuebold';
+    src: url('./ppneue/PPNeueMontrealMono-Bold.woff');
+}
+@font-face {
+    font-family: 'ppneuemedium';
+    src: url('./ppneue/PPNeueMontrealMono-Medium.woff');
+}
+@font-face {
+    font-family: 'ppneuebook';
+    src: url('./ppneue/PPNeueMontrealMono-Book.woff');
+}
+@font-face {
+    font-family: 'ppneuethin';
+    src: url('./ppneue/PPNeueMontrealMono-Thin.woff');
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'ppneuethin';
+    font-size: 100px;
+}
+
+h2 {
+    font-family: 'ppneuethin';
+}
+
+.title-text, .user-input {
+    text-align: center;
+    align-items: center;
+}
+
+.user-input {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+
+#inputField {
+    border-radius: 0px;
+    border-width: .5px;
+    padding: 5px 30px;
+    margin: 20px;
+    font-family: 'ppneuebook';
+}
+
+#page2-button {
+    background-color: transparent;
+    font-family: 'ppneuethin';
+    margin: 20px;
+    padding: 5px 60px;
+    border-width: .5px;
+    transition: transform .3s ease-in-out;
+}
+
+#page2-button:hover {
+    font-family: 'ppneuebook';
+    cursor: pointer;
+}

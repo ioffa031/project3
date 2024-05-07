@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;     
+}
+
+@font-face {
+    font-family: 'ppneueitalic';
+    src: url('./ppneue/PPNeueMontrealMono-RegularItalic.woff');
+}
+@font-face {
+    font-family: 'ppneuebold';
+    src: url('./ppneue/PPNeueMontrealMono-Bold.woff');
+}
+@font-face {
+    font-family: 'ppneuemedium';
+    src: url('./ppneue/PPNeueMontrealMono-Medium.woff');
+}
+@font-face {
+    font-family: 'ppneuebook';
+    src: url('./ppneue/PPNeueMontrealMono-Book.woff');
+}
+@font-face {
+    font-family: 'ppneuethin';
+    src: url('./ppneue/PPNeueMontrealMono-Thin.woff');
+}
+
+body {
+    background-color: #FAF2F2;
+}
+
+h2 {
+    font-family: 'ppneuethin';
+
+}
+
+.one {
+    position: absolute;
+    left: 400px;
+    top: 100px;
+}
+
+.two {
+    position: absolute;
+    left: 800px;
+    top: 200px;
+    display: none;
+}
+
+.agree {
+    background-color: transparent;
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    padding: 5px 60px;
+    border-width: .5px;
+    transition: transform .3s ease-in-out;
+    display: none;
+}
+
+.agree:hover {
+    cursor: pointer;
+    border-width: 1px;
+    font-family: 'ppneuebook';
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-family: 'ppneuethin';
+    font-size: 25px;
+}
+
+li:hover {
+    font-family: 'ppneuebook';
+}
+
+li::before {
+    content: '';
+    display: inline-block;
+    width: 4px; 
+    height: 4px; 
+    border: 1px solid black; 
+    border-radius: 50%; 
+    background-color: transparent; 
+    margin-right: 8px;  
+}
